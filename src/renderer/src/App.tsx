@@ -13,16 +13,17 @@ export default function WalletPage() {
 }
 
 const loadingHeaders = [
-  { min: 0, max: 3, message: 'Initializing Exchange Environment' },
-  { min: 3, max: 12, message: 'Connecting to Supported Blockchains' },
-  { min: 12, max: 26, message: 'Loading Smart Contract Modules' },
-  { min: 26, max: 34, message: 'Validating Contract Integrity' },
-  { min: 34, max: 57, message: 'Fetching Live Token Metadata' },
-  { min: 57, max: 78, message: 'Preparing Liquidity Infrastructure' },
-  { min: 78, max: 93, message: 'Synchronizing Order Books and Swaps' },
-  { min: 93, max: 98, message: 'Validating Liquidity and Pool States' },
-  { min: 98, max: 100, message: 'Wallet Successfully Synchronized' }
+  { min: 0, max: 4, message: 'Initializing EtherDelta Environment' },
+  { min: 4, max: 12, message: 'Connecting to Ethereum Network' },
+  { min: 12, max: 25, message: 'Loading Network Settings and Chain Info' },
+  { min: 25, max: 39, message: 'Downloading Recent Blocks from the Blockchain' },
+  { min: 39, max: 55, message: 'Updating On-Chain Account State' },
+  { min: 55, max: 70, message: 'Synchronizing Blockchain Data' },
+  { min: 70, max: 85, message: 'Verifying Blockchain State Accuracy' },
+  { min: 85, max: 99, message: 'Finalizing Sync and Preparing Wallet' },
+  { min: 99, max: 100, message: 'Wallet Successfully Synchronized' }
 ]
+
 
 const loadingMessages = [
   // Network Initialization (0–5%)
